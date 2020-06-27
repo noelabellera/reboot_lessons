@@ -9,5 +9,19 @@ body {
     justify-content: center;
     color: white;
     font-family: 'Piedra', cursive;
-    ;
+}
+
+#msgBoard {
+    border: solid;
+    color: white;
+    height: 40px;
+    width: 350px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn:hover {
+    cursor: pointer;
 }
