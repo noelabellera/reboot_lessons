@@ -3,8 +3,8 @@ console.log("Hello World")
 let msgArray = ['Hello', 'My', 'Name', 'is', 'Ellis']
 
 var showMsg = document.getElementById('msg')
-var name = document.getElementById('nameBox')
-let showName = document.getElementById('name')
+var typeName = document.getElementById('nameBox')
+let showName = document.getElementById('yourName')
 
 
 document.getElementById("btn")
@@ -26,13 +26,11 @@ function changeMe() {
 }
 
 function changeName() {
-    console.log("Hello")
-    if(name = '') {
+    if(typeName.value === '') {
         showName.innerHTML = "Please Enter a name"
     }else {
-        showName.innerHTML = name
+        showName.innerHTML = typeName.value
     }
-    showName.innerHTML ="test"
+    console.log(typeName.value)
+    typeName.value = ''
 }
-
-console.log(name)
