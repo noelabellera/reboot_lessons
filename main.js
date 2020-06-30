@@ -34,3 +34,14 @@ function changeName() {
     console.log(typeName.value)
     typeName.value = ''
 }
+
+let ul = document.createElement('ul')
+
+document.getElementById('list').appendChild(ul);
+
+msgArray.forEach(function (item) {
+    let li = document.createElement('li');
+    ul.appendChild(li);
+
+    li.innerHTML += item;
+})
